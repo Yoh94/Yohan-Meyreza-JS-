@@ -11,29 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="/store.js" async></script>
+    <!-- async = Membuat script "/store.js" load di background agar terus mendownload script sekaligus dengan body secara bersamaan-->
     <title>Tugas FSD 1</title>
   </head>
   <body>
+    <!-- Navbar -->
     <div class="nav--bar">
       <div class="left">
-        <a href="https://www.harisenin.com/"
+        <a href="#"
           ><img src="IMG/logo_harisenin.svg" alt="harisenin.com logo"
         /></a>
       </div>
       <div class="right">
         <div class="dropdown">
-          <div class="dropdown-btn">
-            <button>Program</button>
-            <img class="arrow" src="IMG/dropdown.png" alt="down-arrow" />
-          </div>
-          <div class="dropdown-btn">
-            <button>Video Course</button>
-            <img class="arrow" src="IMG/dropdown.png" alt="down-arrow" />
-          </div>
-          <div class="dropdown-btn">
-            <button>Corporate</button>
-            <img class="arrow" src="IMG/dropdown.png" alt="down-arrow" />
-          </div>
+          <a href="#">Home</a>
+          <a href="#store">Store</a>
+          <a href="#about">About</a>
         </div>
         <div class="btn">
           <button class="btn-regist">Daftar</button>
@@ -41,6 +35,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Main -->
     <main>
       <section>
         <div class="main--content">
@@ -49,7 +45,7 @@
               Raih Karir Impian
               <br />
               <span class="h1-green">Walau</span>
-              <span class="h1-blue">Pun terhimpit tapi tegar bertahan.</span>
+              <span class="h1-blue">Terhimpit tapi tegar bertahan.</span>
             </h1>
             <div class="text-content">
               Kuasai skill dan dapatkan pekerjaan impianmu.
@@ -98,5 +94,68 @@
         </div>
       </section>
     </main>
+
+    <!-- Store -->
+    <section class="container content-section" id="store">
+      <h2 class="section-header a">Store</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Maapin Jreng</span>
+          <img class="shop-item-image" src="IMG/maapin.jfif" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">Rp. 12000</span>
+            <button class="btn1 btn-primary shop-item-button" type="button">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Gantengin JRG</span>
+          <img class="shop-item-image" src="IMG/gantengin.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">Rp. 24000000</span>
+            <button class="btn1 btn-primary shop-item-button" type="button">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Kopi Menthol</span>
+          <img class="shop-item-image" src="img/kopiMenthol.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">Rp. 9000</span>
+            <button class="btn1 btn-primary shop-item-button" type="button">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Dipatok</span>
+          <img class="shop-item-image" src="img/diPatok.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">Rp. 5000</span>
+            <button class="btn1 btn-primary shop-item-button" type="button">
+              Masukkan Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container content-section">
+      <h2 class="section-header">Keranjang</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">Barang</span>
+        <span class="cart-price cart-header cart-column">Harga</span>
+        <span class="cart-quantity cart-header cart-column">Jumlah</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">Rp. 0</span>
+      </div>
+      <button class="btn1 btn-primary btn-purchase" type="button">
+        Beli Sekarang
+      </button>
+    </section>
   </body>
 </html>
